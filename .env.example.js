@@ -1,3 +1,3 @@
 'use strict';
 
-exports.databaseURL = '';
+exports.databaseURL = 'mongodb://root:example@mongo/Teste';

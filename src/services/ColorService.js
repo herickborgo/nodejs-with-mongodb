@@ -5,7 +5,9 @@ require('../models/Color');
 const Color = mongoose.model('Color');
 
 exports.all = () => {
-  return Color.find();
+  const numColors = Color.estimatedDocumentCount();
+  console.log(numColors);
+  // return Color.count();
 };
 
 exports.create = async (data) => {
